@@ -18,7 +18,7 @@ while True:
         if opcion == 1:
             while True:
                 try:
-                    registro.registrar_datos()
+                    registro.registrar_datos(estudiantes)
                     break
                 except ValueError:
                    error()
