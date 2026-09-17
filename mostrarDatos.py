@@ -10,14 +10,15 @@ def mostrar_datos(datos):
 
         promedio = sum(notas) / len(notas)
         
-        if promedio >= 70:
+        # Se evalúa primero la nota más alta
+        if promedio >= 85:
+            condicion = "Aprobado"
+            rendimiento = "Alto"
+            recomendacion = "Excelente trabajo."
+        elif promedio >= 70:
             condicion = "Aprobado"
             rendimiento = "Medio"
             recomendacion = "Buen trabajo, pero puedes mejorar."
-        elif promedio >= 85:
-            condicion = "Aprobado"
-            rendimiento = "Alto"
-            recomendacion = "Excelente trabajo"
         else:
             condicion = "Reprobado"
             rendimiento = "Bajo"
@@ -28,4 +29,3 @@ def mostrar_datos(datos):
         print(f"Promedio: {promedio:.1f}")
         print(f"Condición: {condicion} ({rendimiento})")
         print(f"Recomendación: {recomendacion}")
-        print("-" * 25)
