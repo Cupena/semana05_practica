@@ -10,7 +10,6 @@ def mostrar_datos(datos):
 
         promedio = sum(notas) / len(notas)
         
-        # Se evalúa primero la nota más alta
         if promedio >= 85:
             condicion = "Aprobado"
             rendimiento = "Alto"
