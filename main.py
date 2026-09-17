@@ -18,7 +18,7 @@ while True:
         if opcion == 1:
             while True:
                 try:
-                    registro.registrar_datos()
+                    registro.registrar_datos(estudiantes)
                     break
                 except ValueError:
                    error()
@@ -36,7 +36,8 @@ while True:
             #4 Mostrar estado
 
         elif opcion == 5:
-            print("Ingresar estudiante: ")
+            print("Saliendo del programa")
+            break
             #5 salir
 
         else:
