@@ -36,7 +36,8 @@ while True:
             #4 Mostrar estado
 
         elif opcion == 5:
-            print("Ingresar estudiante: ")
+            print("Saliendo del programa")
+            break
             #5 salir
 
         else:
