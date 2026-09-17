@@ -13,13 +13,13 @@ def mostrar_datos(datos):
         if promedio >= 70:
             condicion = "Aprobado"
             rendimiento = "Medio"
-            recomendacion = "Buen trabajo, sigue practicando."
+            recomendacion = "Buen trabajo, pero puedes mejorar."
         elif promedio >= 85:
             condicion = "Aprobado"
             rendimiento = "Alto"
-            recomendacion = "Excelente trabajo, continúa así."
+            recomendacion = "Excelente trabajo"
         else:
             condicion = "Reprobado"
             rendimiento = "Bajo"
-            recomendacion = "Necesitas estudiar más y asistir a tutorías."
-            
+            recomendacion = "Necesitas estudiar más."
+        
