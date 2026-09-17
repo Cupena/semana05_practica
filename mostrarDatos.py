@@ -22,4 +22,10 @@ def mostrar_datos(datos):
             condicion = "Reprobado"
             rendimiento = "Bajo"
             recomendacion = "Necesitas estudiar más."
-        
+            
+        print(f"\nEstudiante: {nombre}")
+        print(f"Notas: {notas}")
+        print(f"Promedio: {promedio:.1f}")
+        print(f"Condición: {condicion} ({rendimiento})")
+        print(f"Recomendación: {recomendacion}")
+        print("-" * 25)
