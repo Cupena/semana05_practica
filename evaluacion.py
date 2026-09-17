@@ -6,7 +6,7 @@ def evaluar_Nota(nota):
     else:
         print(f"{nota} - Reprobado")
 
-def evaluar_Rendimeinto(promedio):
+def evaluar_Rendimiento(promedio):
     if promedio >= 90 and promedio <= 100:
         print("APRENDIZAJE AVANZADO" \
         "Dominio sobresaliente: evidencia manejo excepcional de las capacidades, con aplicación innnovadora y transferencia creativa del conocimiento.")

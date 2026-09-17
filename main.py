@@ -28,8 +28,8 @@ while True:
             #2 Ingresar nota
 
         elif opcion == 3:
-            print("Ingresar estudiante: ")
-            #3 Evaluar nota
+            estudiante = input("Ingresar estudiante: ")
+            # estudiante = estudiantes[estudiante]
 
         elif opcion == 4:
             print("Ingresar estudiante: ")
