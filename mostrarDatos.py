@@ -1,5 +1,5 @@
 import evaluacion
-
+#Traslado main
 def mostrar_datos(datos):
     if not datos:
         print("No hay estudiantes registrados.")
@@ -11,7 +11,7 @@ def mostrar_datos(datos):
         notas = alumno[1]
 
         promedio = evaluacion.calculo.averagescore(notas)
-                
+
         if promedio >= 85:
             condicion = "Aprobado"
             rendimiento = "Alto"
