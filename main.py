@@ -34,6 +34,7 @@ while True:
             #2 Ingresar nota
 
         elif opcion == 3:
+<<<<<<< HEAD
             while True:
                 try:
                     cif_estudiante = int(input("Ingrese CIF del estudiante: "))
@@ -41,6 +42,9 @@ while True:
                 except ValueError:
                     error()
                 print("Entrada inválida. Debe ser un número.")
+=======
+            mostrarDatos.mostrar_datos(estudiantes)
+>>>>>>> d90850f9d8293eef7c4a3d94790efbcdb2bdff60
 
         elif opcion == 4:
            while True:
