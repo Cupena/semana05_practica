@@ -34,7 +34,6 @@ while True:
             mostrarDatos.mostrar_datos(estudiantes)
             input("\nPresione Enter para continuar...")
             separador()
-            break
 
         elif opcion == 3:
              separador()
