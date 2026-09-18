@@ -1,10 +1,5 @@
 # Módulo de evaluación a calificaciones
-
-def evaluar_Nota(nota):
-    if nota >= 70:
-        print(f"{nota} - Aprobado")
-    else:
-        print(f"{nota} - Reprobado")
+import calculo
 
 def evaluar_Rendimiento(promedio):
     if promedio >= 90 and promedio <= 100:
