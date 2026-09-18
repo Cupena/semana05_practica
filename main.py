@@ -32,6 +32,7 @@ while True:
 
         elif opcion == 2:
             mostrarDatos.mostrar_datos(estudiantes)
+            input("\nPresione Enter para continuar...")
             separador()
             break
 
@@ -42,7 +43,7 @@ while True:
         else:
             error()
             separador()
-            
+
     except ValueError:
         error()
         
