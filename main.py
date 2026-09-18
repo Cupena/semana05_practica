@@ -1,4 +1,4 @@
-import calculo, evaluacion, registro, mostrarDatos
+import calculo, evaluacion, registro, mostrarDatos, os, time
 
 estudiantes = []
 
@@ -12,13 +12,21 @@ def menu():
 def error():
     print("Ingrese un valor valido.")
 
+def separador():
+    print("--------------------------------------------------")
+    time.sleep(3)
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print(menu())
+
 while True:
     try:
+        print(menu())
         opcion = int(input("Ingrese accion a realizar: "))
         if opcion == 1:
             while True:
                 try:
                     registro.registrar_datos(estudiantes)
+                    separador()
                     break
                 except ValueError:
                    error()
