@@ -21,4 +21,4 @@ def mostrar_datos(datos):
         print(f"Promedio: {promedio:.1f}")
         print(f"Condición: {condicion} ({rendimiento})")
         print(f"Descripcion: {descripcion}")
-
+#
