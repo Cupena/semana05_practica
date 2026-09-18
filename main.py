@@ -24,24 +24,36 @@ while True:
                    error()
    
         elif opcion == 2:
-            print("Ingresar estudiante: ")
+            while True:
+                try:
+                    ingresar_nota = int(input("Ingrese nota: "))
+                    break
+                except ValueError:
+                    error()
+                    print("Ingresar estudiante: ")
             #2 Ingresar nota
 
         elif opcion == 3:
-            estudiante = input("Ingresar estudiante: ")
-            # estudiante = estudiantes[estudiante]
+            while True:
+                try:
+                    cif_estudiante = int(input("Ingrese CIF del estudiante: "))
+                    break
+                except ValueError:
+                    error()
+                print("Entrada inválida. Debe ser un número.")
 
         elif opcion == 4:
-            print("Ingresar estudiante: ")
-            #4 Mostrar estado
-
-        elif opcion == 5:
-            print("Saliendo del programa")
-            break
+           while True:
+                           try:
+                               cif_estudiante = int(input("Ingrese CIF del estudiante: "))
+                               break
+                           except ValueError:
+                               error()
+                           print("Entrada inválida. Debe ser un número.")
             #5 salir
 
         else:
             error()
     except ValueError:
         error()
-        ola
+        
