@@ -1,27 +1,29 @@
-# Módulo de evaluación a calificaciones
-import calculo
+aprobado = "Aprobado"
+reprobado = "Reprobado"
 
 def evaluar_Rendimiento(promedio):
-    if promedio >= 90 and promedio <= 100:
-        print("APRENDIZAJE AVANZADO" \
-        "Dominio sobresaliente: evidencia manejo excepcional de las capacidades, con aplicación innnovadora y transferencia creativa del conocimiento.")
-    elif promedio >= 80 and promedio <= 86:
-        print("APRENDIZAJE SATISFACTORIO" \
-        "Dominio adecuado: aplica habilidades y conocimientos de manera integrada en situaciones reales, cumpliendo con los criterios establecidos.")
-    elif promedio >=70 and promedio <= 79:
-        print("APRENDIZAJE FUNDAMENTAL" \
-        "Dominio básico: demuestra comprensión fundamental de conceptos y habilidades, aunque con limitaciones en su integración y aplicación contextual.")
-    elif promedio <= 69:
-        print("APRENDIZAJE INICIAL" \
-        "Dominio limitado o en desarrollo: evidencia habilidades y destrezas mínimas o parciales, con dificultad para aplicarlas en contextos reales.")
+    if promedio >= 90:
+        return "APRENDIZAJE AVANZADO"
+    elif promedio >= 80:
+        return "APRENDIZAJE SATISFACTORIO" 
+    elif promedio >= 70:
+        return "APRENDIZAJE FUNDAMENTAL" 
+    else:
+        return "APRENDIZAJE INICIAL" 
 
-
-''' 
-Ingresar los datos del estudiante.
-Luis: Registrar diferentes calificaciones.
-Rebeca: Calcular el promedio.
-Belén: Determinar si el estudiante aprueba o reprueba - LISTO.
-Belén: Identificar diferentes rangos de rendimiento.
-Luis: Mostrar una recomendación según el resultado.
-Rebeca: Validar que las calificaciones estén dentro del rango permitido. 
-'''
+def evaluar_condicion(promedio):
+    if promedio >= 70:
+        return aprobado
+    else:
+        return reprobado
+    
+def describir_resultado(promedio):
+    if promedio >= 90:
+        descripcion = "Dominio sobresaliente: evidencia manejo excepcional de las capacidades, con aplicación innovadora y transferencia creativa del conocimiento."
+    elif promedio >= 80:
+        descripcion = "Dominio adecuado: aplica habilidades y conocimientos de manera integrada en situaciones reales, cumpliendo con los criterios establecidos."
+    elif promedio >= 70:
+        descripcion = "Dominio básico: demuestra comprensión fundamental de conceptos y habilidades, aunque con limitaciones en su integración y aplicación contextual."
+    else:
+        descripcion = "Dominio limitado o en desarrollo: evidencia habilidades y destrezas mínimas o parciales, con dificultad para aplicarlas en contextos reales."
+    return descripcion
