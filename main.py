@@ -14,13 +14,12 @@ def error():
 
 def separador():
     print("--------------------------------------------------")
-    time.sleep(3)
+    time.sleep(1.5)
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(menu())
 
 while True:
     try:
-        print(menu())
+        menu()
         opcion = int(input("Ingrese accion a realizar: "))
         if opcion == 1:
             while True:
@@ -61,6 +60,9 @@ while True:
                            except ValueError:
                                error()
                            print("Entrada inválida. Debe ser un número.")
+        elif opcion == 5:
+             separador()
+             break
             #5 salir
 
         else:
