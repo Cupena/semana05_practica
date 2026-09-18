@@ -16,6 +16,7 @@ def separador():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 while True:
+
     try:
         menu()
         opcion = int(input("Ingrese accion a realizar: "))
@@ -30,15 +31,9 @@ while True:
                    error()
 
         elif opcion == 2:
-            while True:
-                    try:
-                        cif_estudiante = int(input("Ingrese CIF del estudiante: "))
-                        break
-                    except ValueError:
-                        error()
-                    print("Entrada inválida. Debe ser un número.")
-
             mostrarDatos.mostrar_datos(estudiantes)
+            separador()
+            break
 
         elif opcion == 3:
              separador()
@@ -46,6 +41,8 @@ while True:
 
         else:
             error()
+            separador()
+            
     except ValueError:
         error()
         
