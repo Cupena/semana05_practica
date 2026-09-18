@@ -1,5 +1,0 @@
-# Módulo de cálculo
-
-# Comentario de prueba. ¿Funciona el repositorio? Probando.
-# Sirve?
-#holaa
